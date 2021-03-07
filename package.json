@@ -1,0 +1,42 @@
+{
+  "name": "glacio",
+  "version": "1.0.0",
+  "description": "This take jpe?g/png/svg and it converts all images from a certain folder to webp/avif.",
+  "main": "index.js",
+  "bin": "index.js",
+  "scripts": {
+    "glacio": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/kamalendugarai/glacier.git"
+  },
+  "keywords": [
+    "avif",
+    "webp",
+    "image",
+    "jpeg",
+    "jpg",
+    "png",
+    "svg"
+  ],
+  "author": "Kamalendu Garai",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kamalendugarai/glacier/issues"
+  },
+  "homepage": "https://github.com/kamalendugarai/glacier#readme",
+  "dependencies": {
+    "center-align": "^1.0.1",
+    "chalk": "^4.1.0",
+    "cli-progress": "^3.9.0",
+    "figlet": "^1.5.0",
+    "glob": "^7.1.6",
+    "ignored": "^2.0.4",
+    "inquirer": "^8.0.0",
+    "listdirs": "^3.1.1",
+    "minimist": "^1.2.5",
+    "minimist-options": "^4.1.0",
+    "sharp": "^0.27.2"
+  }
+}
