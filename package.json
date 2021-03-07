@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/kamalendugarai/glacier.git"
+    "url": "git+ssh://git@github.com/kamalendugarai/glacio.git"
   },
   "keywords": [
     "avif",
