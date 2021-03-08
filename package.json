@@ -1,9 +1,11 @@
 {
   "name": "glacio",
-  "version": "1.0.1",
+  "version": "1.0.4",
   "description": "This take jpe?g/png/svg and it converts all images from a certain folder to webp/avif.",
-  "main": "index.js",
-  "bin": "index.js",
+  "main": "bin/index.js",
+  "bin": {
+    "glacio": "./bin/index.js"
+  },
   "scripts": {
     "glacio": "node index.js"
   },

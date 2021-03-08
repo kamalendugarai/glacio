@@ -1,0 +1,1 @@
+This is a high performance webp, avif image converter from jpeg, jpg, png, svg file. This package auto searhes and shows a list of folders to choose from as a source folder and you can choose your destination folder, next it asks for the image types you want to choose and the quality setting, then it converts all the images as per selection you made to desired folder.

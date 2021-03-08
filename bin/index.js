@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 const fs = require("fs");
 const path = require("path");
 const chalk = require("chalk");
@@ -10,7 +11,6 @@ const center = require('center-align');
 const cliProgress = require('cli-progress');
 const inquirer = require('inquirer');
 const listdirs = require('listdirs');
-const ignored  = require('ignored')('./.gitignore');
 
 const basedir  = "."; // or which ever base directory you prefer
 let allDirectories=[];
@@ -148,7 +148,7 @@ listdirs(basedir, function callback(err, list){
         allDirectories = list; // use the array of directories as required.
         inquire(questions);        
     }
-}, [...ignored, '.git']);
+}, ['node_modules', '.git']);
 
 /** Generate Images*/
 const generateImages = (answers) =>{
