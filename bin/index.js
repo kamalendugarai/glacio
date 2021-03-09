@@ -33,6 +33,10 @@ options = buildOptions({
   imageQualitis:{
     type:'array',
     alias:'q',
+  },
+  help:{
+    type:'string',
+    alias:'h'
   }
 });
 
@@ -44,7 +48,6 @@ let argv = minimist(process.argv.slice(2),options);
 //   // console.log('Queue contains ' + queueLength + ' task(s)');
 
 // });
-
 
 
 /*Monogram*/
@@ -109,7 +112,7 @@ let callGenerateImage = (answers, argv)=>{
 }
 
 /** InQueries made */
-console.clear();
+// console.clear();
 /**Inquiries generation */
 const inquire = (questions) =>{
   let quest = questions();
@@ -146,7 +149,16 @@ listdirs(basedir, function callback(err, list){
     }
     else {
         allDirectories = list; // use the array of directories as required.
-        inquire(questions);        
+        if(Object.keys(argv).indexOf('h') != -1){
+          console.log("");
+          console.log(`${chalk.green("-i | --inputImagePath")} Source image folder path.`);
+          console.log(`${chalk.green("-d | --distImagePath")}  Destination image folder path`);
+          console.log(`${chalk.green("-t | --imageTypes")}     Image tupes to convert (webp|avif|png|jpg).`);
+          console.log(`${chalk.green("-q | --imageQualitis")}  Quality of the chosen image types (comma separated).`);
+          console.log("");
+        }else{          
+          inquire(questions);        
+        }
     }
 }, ['node_modules', '.git']);
 
