@@ -151,10 +151,10 @@ listdirs(basedir, function callback(err, list){
         allDirectories = list; // use the array of directories as required.
         if(Object.keys(argv).indexOf('h') != -1){
           console.log("");
-          console.log(`${chalk.green("-i | --inputImagePath")} Source image folder path.`);
-          console.log(`${chalk.green("-d | --distImagePath")}  Destination image folder path`);
-          console.log(`${chalk.green("-t | --imageTypes")}     Image tupes to convert (webp|avif|png|jpg).`);
-          console.log(`${chalk.green("-q | --imageQualitis")}  Quality of the chosen image types (comma separated).`);
+          console.log(`${chalk.green("-i, --inputImagePath")} Source image folder path.`);
+          console.log(`${chalk.green("-d, --distImagePath")}  Destination image folder path`);
+          console.log(`${chalk.green("-t, --imageTypes")}     Image tupes to convert (webp|avif|png|jpg).`);
+          console.log(`${chalk.green("-q, --imageQualitis")}  Quality of the chosen image types (comma separated).`);
           console.log("");
         }else{          
           inquire(questions);        
