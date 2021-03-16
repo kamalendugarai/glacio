@@ -182,7 +182,8 @@ var index_of_type=0;
       images[item].map((tp,i)=>{
         if(item.trim() == "avif"){
           sharp(tp.ip)
-          .avif({quality:parseInt(answers.imageQualitis.split(",")[index_of_type])}).toFile(tp.op)
+          
+          .avif({quality:parseInt(answers.imageQualitis.split(",")[index_of_type].trim())}).toFile(tp.op)
           .then((resp)=>{
             // console.log(resp)
           })
@@ -191,9 +192,8 @@ var index_of_type=0;
           });
         }
         if(item.trim() == "webp"){
-          console.log("webp - optimization", answers.imageQualitis.split(",")[index_of_type]);
           sharp(tp.ip)
-              .webp({quality:parseInt(answers.imageQualitis.split(",")[i])}).toFile(tp.op)
+              .webp({quality:parseInt(answers.imageQualitis.split(",")[i].trim())}).toFile(tp.op)
               .then((resp)=>{
                 // console.log(resp)
               })
@@ -204,7 +204,7 @@ var index_of_type=0;
        
         if(item.trim() == "jpg"){
           sharp(tp.ip)
-              .jpg({quality:parseInt(answers.imageQualitis.split(",")[i])}).toFile(tp.op)
+              .jpg({quality:parseInt(answers.imageQualitis.split(",")[i].trim())}).toFile(tp.op)
               .then((resp)=>{
                 // console.log(resp)
               })
@@ -214,7 +214,7 @@ var index_of_type=0;
         };
         if(item.trim() == "png"){
           sharp(tp.ip)
-              .png({quality:parseInt(answers.imageQualitis.split(",")[i])}).toFile(tp.op)
+              .png({quality:parseInt(answers.imageQualitis.split(",")[i].trim())}).toFile(tp.op)
               .then((resp)=>{
                 // console.log(resp)
               })
