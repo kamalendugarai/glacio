@@ -49,6 +49,7 @@ let argv = minimist(process.argv.slice(2),options);
 
 // });
 
+let cp;
 
 /*Monogram*/
 figlet('GLACIO', {
@@ -59,6 +60,7 @@ figlet('GLACIO', {
       console.dir(chalk.red(center(err, process.stdout.columns)));
     }
     console.log(chalk.cyan(center(data, process.stdout.columns)));
+    cp = new cliProgress.SingleBar({}, cliProgress.Presets.shades_classic);
 });
 
 
@@ -166,6 +168,7 @@ listdirs(basedir, function callback(err, list){
 const generateImages = (answers) =>{
     let images ={};
     let all_images = fs.readdirSync(answers.inputImagePath);
+    cp.start(all_images, 0);
     all_images.map((fl, i) => {
         if (fl.search(/\.(jpe?g|png|gif|svg)$/) != -1) {
           answers.imageTypes.map(it=>{
@@ -185,6 +188,7 @@ var index_of_type=0;
           .avif({quality:parseInt(answers.imageQualitis.split(",")[index_of_type].trim())}).toFile(tp.op)
           .then((resp)=>{
             // console.log(resp)
+            cp.increment();
           })
           .catch((err)=>{
             console.log(err)
