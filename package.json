@@ -7,7 +7,8 @@
     "glacio": "./bin/index.js"
   },
   "scripts": {
-    "glacio": "node index.js"
+    "glacio": "node index.js",
+    "minme": "terser ./src/index.js -c -m -o ./bin/index.js"
   },
   "repository": {
     "type": "git",
@@ -39,5 +40,8 @@
     "minimist": "^1.2.5",
     "minimist-options": "^4.1.0",
     "sharp": "^0.27.2"
+  },
+  "devDependencies": {
+    "terser": "^5.6.1"
   }
 }
