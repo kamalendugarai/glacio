@@ -2,7 +2,7 @@
 
 Command line utility to convert images to WEBP and AVIF.
 
-This is a high performance image converter from jpeg, jpg, png, svg file. This package auto searhes and shows a list of folders to source folder and you can choose your destination folder, next it asks for the image types you want to choose and the quality setting, then it converts all the images as per choices you made to desired folder.
+This is a high performance image converter from jpeg, jpg, png, svg file. This package auto searches and shows a list of  folders you can choose from as image source and your destination folder, next it asks for the image types you want to convert and the quality setting. Once done it converts all the images as per choices you made to desired folder.
 
 ## Usage
 

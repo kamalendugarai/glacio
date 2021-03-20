@@ -30,7 +30,6 @@
   "homepage": "https://github.com/kamalendugarai/glacier#readme",
   "dependencies": {
     "center-align": "^1.0.1",
-    "chalk": "^4.1.0",
     "cli-progress": "^3.9.0",
     "figlet": "^1.5.0",
     "glob": "^7.1.6",
