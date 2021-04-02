@@ -28,7 +28,7 @@
   "bugs": {
     "url": "https://github.com/kamalendugarai/glacio/issues"
   },
-  "homepage": "https://github.com/kamalendugarai/glacio#readme",
+  "homepage": "https://kamalendugarai.github.io/glacio/",
   "engines": {
     "node": ">=8.3.0"
   },
