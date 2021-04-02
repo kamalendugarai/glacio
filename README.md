@@ -13,11 +13,11 @@ $ npm i glacio -g
 ## Options
 
 ```
-    -i | --inputImagePath   Source image folder path.
-    -d | --distImagePath    Destination image folder path.
-    -t | --imageTypes       Image tupes to convert(webp|avif|png|jpg) (comma separated).
-    -q | --imageQualitis    Quality of the chosen image types (comma separated).
-    -h, --help              Show help
+    -i, --inputImagePath   Source image folder path.
+    -d, --distImagePath    Destination image folder path.
+    -t, --imageTypes       Image tupes to convert(webp|avif|png|jpg) (comma separated).
+    -q, --imageQualitis    Quality of the chosen image types (comma separated).
+    -h, --help             Show help
 ```
 
 ## Examples

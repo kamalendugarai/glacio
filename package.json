@@ -26,9 +26,9 @@
   "author": "Kamalendu Garai",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/kamalendugarai/glacier/issues"
+    "url": "https://github.com/kamalendugarai/glacio/issues"
   },
-  "homepage": "https://github.com/kamalendugarai/glacier#readme",
+  "homepage": "https://github.com/kamalendugarai/glacio#readme",
   "engines": {
     "node": ">=8.3.0"
   },
