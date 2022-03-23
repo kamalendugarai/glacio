@@ -41,7 +41,7 @@
     "ignored": "^2.0.4",
     "inquirer": "^8.0.0",
     "listdirs": "^3.1.1",
-    "minimist": "^1.2.5",
+    "minimist": "^1.2.6",
     "minimist-options": "^4.1.0",
     "sharp": "^0.27.2"
   },
