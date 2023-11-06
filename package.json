@@ -1,13 +1,13 @@
 {
   "name": "glacio",
-  "version": "1.1.4",
+  "version": "2.0.0",
   "description": "This take jpe?g/png/svg and it converts all images from a certain folder to webp/avif.",
   "main": "bin/index.js",
   "bin": {
     "glacio": "./bin/index.js"
   },
   "scripts": {
-    "glacio": "node index.js",
+    "glacio": "node src/index.js",
     "minme": "terser ./src/index.js -c -m -o ./bin/index.js"
   },
   "repository": {
@@ -34,29 +34,19 @@
   },
   "dependencies": {
     "center-align": "^1.0.1",
-    "cli-progress": "^3.9.0",
+    "cli-progress": "^3.12.0",
     "colors": "^1.4.0",
-    "figlet": "^1.5.0",
-    "glob": "^7.1.6",
+    "figlet": "^1.7.0",
+    "glob": "^10.3.10",
     "ignored": "^2.0.4",
     "inquirer": "^8.0.0",
     "listdirs": "^3.1.1",
-    "minimist": "^1.2.5",
+    "minimist": "^1.2.8",
     "minimist-options": "^4.1.0",
-    "sharp": "^0.27.2"
+    "sharp": "^0.32.6"
   },
   "devDependencies": {
-    "eslint": "^7.22.0",
-    "eslint-config-airbnb": "^18.2.1",
-    "eslint-config-node": "^4.1.0",
-    "eslint-config-prettier": "^8.1.0",
-    "eslint-plugin-import": "^2.22.1",
-    "eslint-plugin-jsx-a11y": "^6.4.1",
-    "eslint-plugin-node": "^11.1.0",
-    "eslint-plugin-prettier": "^3.3.1",
-    "eslint-plugin-react": "^7.22.0",
-    "eslint-plugin-react-hooks": "^1.7.0",
-    "prettier": "^2.2.1",
-    "terser": "^5.6.1"
+    "prettier": "^3.0.3",
+    "terser": "^5.24.0"
   }
 }
