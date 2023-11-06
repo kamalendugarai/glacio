@@ -30,7 +30,7 @@
   },
   "homepage": "https://kamalendugarai.github.io/glacio/",
   "engines": {
-    "node": ">=8.3.0"
+    "node": ">=16.14.2"
   },
   "dependencies": {
     "center-align": "^1.0.1",
