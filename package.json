@@ -39,7 +39,7 @@
     "figlet": "^1.7.0",
     "glob": "^10.3.10",
     "ignored": "^2.0.4",
-    "inquirer": "^8.0.0",
+    "inquirer": "^10.0.0",
     "listdirs": "^3.1.1",
     "minimist": "^1.2.8",
     "minimist-options": "^4.1.0",
